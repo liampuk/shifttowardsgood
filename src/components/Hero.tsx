@@ -27,6 +27,23 @@ const BgImage = styled.img`
   object-fit: cover;
   object-position: 0 0;
   height: 95vh;
+
+  @media (orientation: portrait) {
+    height: 700px;
+
+    animation: moveRight 30s linear infinite;
+
+    @keyframes moveRight {
+  0% {
+    object-position: 0 0;
+  }
+  50% {
+    object-position: 100% 0;
+  }
+  100% {
+    object-position: 0% 0;
+  }
+  }
 `
 
 const Container = styled.div`
@@ -48,29 +65,28 @@ const MainText = styled.div`
   @media (orientation: portrait) {
     width: 100vw;
     top: auto;
-    bottom: 5vh;
+    bottom: 0;
     right: 0;
+    padding: 16px;
   }
 `
 
 const Header = styled.h2`
-  font-size: 32px;
-  margin: 0;
-  text-align: justify;
-  height: 32px;
+  @media (orientation: landscape) {
+    font-size: 32px;
+    margin: 0;
+    text-align: justify;
+    height: 32px;
 
-  &:after {
-    content: "";
-    display: inline-block;
-    width: 100%;
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+    }
   }
-`
 
-const Link = styled.a`
-  color: #e62a2a;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
+  @media (orientation: portrait) {
+    font-size: 6vw;
   }
 `
 

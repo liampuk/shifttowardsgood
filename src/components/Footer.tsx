@@ -7,7 +7,7 @@ export const Footer = () => {
 const Container = styled.div`
   background-color: #333;
   width: 100vw;
-  height: 20vh;
+  height: 200px;
   color: white;
   padding: 32px;
 `
