@@ -43,7 +43,7 @@ export const WhoWeAre = () => {
     }
   }
 
-  const handleVideoLoaded = (e) => {
+  const handleVideoLoaded = (e: any) => {
     console.log("test", e)
   }
 
@@ -74,7 +74,6 @@ export const WhoWeAre = () => {
       <VideoContainer>
         <MainVideo
           onClick={handlePlay}
-          onTouchStart={handlePlay}
           poster="video/thumbnail.jpg"
           loop
           playsInline
