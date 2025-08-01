@@ -13,8 +13,8 @@ function App() {
       <Nav />
       <Hero />
       <WhoWeAre />
-      <HowWeMatch />
       <HowYouCanHelp />
+      <HowWeMatch />
       <Footer />
     </>
   )

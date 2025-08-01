@@ -12,30 +12,45 @@ export const Nav = () => {
         </LogoLink>
         <DesktopNav>
           <NavLink href="#WhoWeAre">Who We Are</NavLink>
-          <NavLink href="#HowWeMatch">
-            How We Match
-            <br />
-            Donations
-          </NavLink>
           <NavLink href="#HowYouCanHelp">
             How You
             <br />
             Can Help
           </NavLink>
+          <NavLink href="#HowWeMatch">
+            How We Match
+            <br />
+            Donations
+          </NavLink>
         </DesktopNav>
         <EndNav>
           <DonateButton
-            onClick={() => (window.location.href = "https://www.map.org.uk/")}
+            onClick={() =>
+              (window.location.href =
+                "https://www.gofundme.com/f/shift-towards-good-for-medical-aid-for-palestinians")
+            }
           >
             DONATE
           </DonateButton>
-          <HamburgerButton onClick={() => setShowNav((prev) => !prev)}>
-            <Burger viewBox="0 0 100 80" width="40" height="40">
-              <rect y="5" width="100" height="10"></rect>
-              <rect y="35" width="100" height="10"></rect>
-              <rect y="65" width="100" height="10"></rect>
-            </Burger>
-          </HamburgerButton>
+          {showNav ? (
+            <HamburgerButton
+              style={{ rotate: "45deg" }}
+              onClick={() => setShowNav((prev) => !prev)}
+            >
+              <Burger viewBox="0 0 100 100" width="40" height="40">
+                <rect y="0" width="10" height="100" x="45"></rect>
+                <rect y="45" width="100" height="10"></rect>
+              </Burger>
+            </HamburgerButton>
+          ) : (
+            <HamburgerButton onClick={() => setShowNav((prev) => !prev)}>
+              <Burger viewBox="0 0 100 80" width="40" height="40">
+                <rect y="5" width="100" height="10"></rect>
+                <rect y="35" width="100" height="10"></rect>
+                <rect y="65" width="100" height="10"></rect>
+              </Burger>
+            </HamburgerButton>
+          )}
         </EndNav>
       </NavBar>
 
@@ -47,11 +62,11 @@ export const Nav = () => {
         <MobileNavLink href="#WhoWeAre" onClick={() => setShowNav(false)}>
           Who We Are
         </MobileNavLink>
-        <MobileNavLink href="#HowWeMatch" onClick={() => setShowNav(false)}>
-          How We Match Donations
-        </MobileNavLink>
         <MobileNavLink href="#HowYouCanHelp" onClick={() => setShowNav(false)}>
           How You Can Help
+        </MobileNavLink>
+        <MobileNavLink href="#HowWeMatch" onClick={() => setShowNav(false)}>
+          How We Match Donations
         </MobileNavLink>
       </MobileNav>
     </Container>

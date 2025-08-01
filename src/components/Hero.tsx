@@ -13,7 +13,10 @@ export const Hero = () => {
           </p>
         </div>
         <DonateButton
-          onClick={() => (window.location.href = "https://www.map.org.uk/")}
+          onClick={() =>
+            (window.location.href =
+              "https://www.gofundme.com/f/shift-towards-good-for-medical-aid-for-palestinians")
+          }
         >
           Click here to DONATE
         </DonateButton>
@@ -26,7 +29,7 @@ const BgImage = styled.img`
   width: 100%;
   object-fit: cover;
   object-position: 0 0;
-  height: 95vh;
+  height: 100vh;
 
   @media (orientation: portrait) {
     height: 700px;
@@ -61,6 +64,7 @@ const MainText = styled.div`
   padding: 32px;
   font-size: 20px;
   text-align: justify;
+  border-radius: 8px;
 
   @media (orientation: portrait) {
     width: 100vw;
@@ -68,6 +72,7 @@ const MainText = styled.div`
     bottom: 0;
     right: 0;
     padding: 16px;
+    border-radius: 0;
   }
 `
 
