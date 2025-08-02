@@ -9,14 +9,11 @@ export const Hero = () => {
 
   return (
     <Container id="top">
-      <BgImage src="bg-image.png" />
+      <BgImage src="bg-image.webp" />
       <MainText>
         <Header>One Shift Can Make a Difference</Header>
         <div>
-          <p>
-            Donating one extra shift can make a huge difference to help people
-            critically in need in Palestine.
-          </p>
+          <p>Donating one extra shift can make a huge difference.</p>
         </div>
         <DonateButton
           onClick={() =>
