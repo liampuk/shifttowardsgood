@@ -1,6 +1,12 @@
+import { useEffect } from "react"
 import styled from "styled-components"
 
 export const Hero = () => {
+  useEffect(() => {
+    const vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty("--initial-vh", `${vh}px`)
+  }, [])
+
   return (
     <Container id="top">
       <BgImage src="bg-image.png" />
@@ -28,51 +34,62 @@ export const Hero = () => {
 const BgImage = styled.img`
   width: 100%;
   object-fit: cover;
-  object-position: 0 0;
+  object-position: 1 0;
   height: 100svh;
 
   @media (orientation: portrait) {
     height: 700px;
 
-    animation: moveRight 30s linear infinite;
+    animation: moveRight 50s linear infinite;
 
     @keyframes moveRight {
-  0% {
-    object-position: 0 0;
-  }
-  50% {
-    object-position: 100% 0;
-  }
-  100% {
-    object-position: 0% 0;
-  }
+      0% {
+        object-position: 0 0;
+      }
+      50% {
+        object-position: 100% 0;
+      }
+      100% {
+        object-position: 0% 0;
+      }
+    }
   }
 `
 
 const Container = styled.div`
-  height: 100svh;
+  /* height: 700px; */
+  height: calc(var(--initial-vh) * 100);
+  display: flex;
+  flex-direction: column;
 `
 
 const MainText = styled.div`
-  width: 500px;
-  background-color: white;
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* backdrop-filter: blur(10px); */
-  position: absolute;
-  right: 100px;
-  top: 58svh;
-  padding: 32px;
-  font-size: 20px;
-  text-align: justify;
-  border-radius: 8px;
+  @media (orientation: landscape) {
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    right: 100px;
+    top: 58svh;
+    padding: 32px;
+    font-size: 20px;
+    text-align: justify;
+    border-radius: 8px;
+  }
 
   @media (orientation: portrait) {
+    background-color: white;
     width: 100vw;
-    top: auto;
+    display: block;
+    border-radius: 0;
+    right: 0;
+    padding: 32px;
+    font-size: 20px;
+    text-align: justify;
+    /* top: auto;
     bottom: 0;
     right: 0;
     padding: 16px;
-    border-radius: 0;
+    border-radius: 0; */
   }
 `
 

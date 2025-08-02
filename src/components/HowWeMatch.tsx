@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { Anchor } from "../commonStyles"
 
 export const HowWeMatch = () => {
   return (
@@ -37,7 +36,6 @@ const ImageContainer = styled.div`
 
 const MatchedImage = styled.img`
   width: 100%;
-  margin-top: 30svh;
   border-radius: 8px;
 
   @media (orientation: portrait) {
@@ -52,7 +50,6 @@ const Container = styled.div`
   padding: 64px;
   position: relative;
   display: flex;
-  height: 110svh;
   gap: 64px;
 
   @media (orientation: portrait) {
@@ -63,13 +60,8 @@ const Container = styled.div`
 
 const Heading = styled.div`
   font-size: 60px;
-  margin-top: 35svh;
   font-weight: 600;
   margin-bottom: 32px;
-
-  @media (orientation: portrait) {
-    margin-top: 150px;
-  }
 `
 
 const SectionText = styled.div`
@@ -80,5 +72,14 @@ const SectionText = styled.div`
 
   @media (orientation: portrait) {
     width: 100%;
+  }
+`
+
+const Anchor = styled.div`
+  margin-top: -225px;
+  position: absolute;
+
+  @media (orientation: portrait) {
+    margin-top: -150px;
   }
 `

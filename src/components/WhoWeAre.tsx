@@ -44,7 +44,7 @@ export const WhoWeAre = () => {
   }
 
   const handleVideoLoaded = (e: any) => {
-    console.log("test", e)
+    console.log("video loaded", e)
   }
 
   return (
@@ -153,31 +153,24 @@ const MapLogo = styled.img`
 
 const PauseButton = styled.svg`
   position: absolute;
-  margin-top: 10%;
+  margin-top: 45%;
   pointer-events: none;
 `
 
 const VideoContainer = styled.div`
-  height: 100svh;
+  height: 500px;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
-
-  @media (orientation: portrait) {
-    height: 100%;
-  }
+  margin-top: 32px;
 `
 
 const MainVideo = styled.video`
   width: auto;
-  height: 65%;
-  margin-top: 30%;
   border-radius: 8px;
   cursor: pointer;
 
   @media (orientation: portrait) {
-    width: 80%;
     height: auto;
     margin-top: 32px;
   }
@@ -198,13 +191,9 @@ const Container = styled.div`
 
 const Heading = styled.div`
   font-size: 60px;
-  margin-top: 30svh;
+  margin-top: 32px;
   font-weight: 600;
   margin-bottom: 32px;
-
-  @media (orientation: portrait) {
-    margin-top: 150px;
-  }
 `
 
 const SectionText = styled.div`

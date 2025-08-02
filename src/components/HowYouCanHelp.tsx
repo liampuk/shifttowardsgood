@@ -31,7 +31,7 @@ const Container = styled.div`
   background-color: #222;
   color: white;
   width: 100vw;
-  height: 100svh;
+  /* height: 100svh; */
   padding: 64px;
   position: relative;
   display: flex;
@@ -42,13 +42,8 @@ const Container = styled.div`
 
 const Heading = styled.h2`
   font-size: 60px;
-  margin-top: 25svh;
   font-weight: 600;
   margin-bottom: 32px;
-
-  @media (orientation: portrait) {
-    margin-top: 20svh;
-  }
 `
 
 const SectionText = styled.div`

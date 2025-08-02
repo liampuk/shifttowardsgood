@@ -7,7 +7,7 @@ export const Nav = () => {
   return (
     <Container>
       <NavBar>
-        <LogoLink href="#Top">
+        <LogoLink href="#Top" onClick={() => setShowNav(false)}>
           <Logo src="shift_towards_good.png" />
         </LogoLink>
         <DesktopNav>
