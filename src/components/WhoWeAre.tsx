@@ -75,7 +75,6 @@ export const WhoWeAre = () => {
         <MainVideo
           onClick={handlePlay}
           poster="video/thumbnail.jpg"
-          loop
           playsInline
           preload="auto"
           ref={videoRef}
