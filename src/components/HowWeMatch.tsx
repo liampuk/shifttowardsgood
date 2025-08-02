@@ -37,7 +37,7 @@ const ImageContainer = styled.div`
 
 const MatchedImage = styled.img`
   width: 100%;
-  margin-top: 30vh;
+  margin-top: 30svh;
   border-radius: 8px;
 
   @media (orientation: portrait) {
@@ -52,7 +52,7 @@ const Container = styled.div`
   padding: 64px;
   position: relative;
   display: flex;
-  height: 110vh;
+  height: 110svh;
   gap: 64px;
 
   @media (orientation: portrait) {
@@ -63,7 +63,7 @@ const Container = styled.div`
 
 const Heading = styled.div`
   font-size: 60px;
-  margin-top: 35vh;
+  margin-top: 35svh;
   font-weight: 600;
   margin-bottom: 32px;
 

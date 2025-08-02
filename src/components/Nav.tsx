@@ -90,7 +90,7 @@ const MobileNavLink = styled.a`
 const MobileNav = styled.div`
   width: 100vw;
   right: 0;
-  height: 100vh;
+  height: 100svh;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   position: fixed;

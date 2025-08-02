@@ -158,7 +158,7 @@ const PauseButton = styled.svg`
 `
 
 const VideoContainer = styled.div`
-  height: 100vh;
+  height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,7 +198,7 @@ const Container = styled.div`
 
 const Heading = styled.div`
   font-size: 60px;
-  margin-top: 30vh;
+  margin-top: 30svh;
   font-weight: 600;
   margin-bottom: 32px;
 

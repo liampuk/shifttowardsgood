@@ -29,7 +29,7 @@ const BgImage = styled.img`
   width: 100%;
   object-fit: cover;
   object-position: 0 0;
-  height: 100vh;
+  height: 100svh;
 
   @media (orientation: portrait) {
     height: 700px;
@@ -50,7 +50,7 @@ const BgImage = styled.img`
 `
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100svh;
 `
 
 const MainText = styled.div`
@@ -60,7 +60,7 @@ const MainText = styled.div`
   /* backdrop-filter: blur(10px); */
   position: absolute;
   right: 100px;
-  top: 58vh;
+  top: 58svh;
   padding: 32px;
   font-size: 20px;
   text-align: justify;
