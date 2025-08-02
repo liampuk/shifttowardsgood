@@ -151,14 +151,18 @@ const MapLogo = styled.img`
 `
 
 const PauseButton = styled.svg`
-  top: 0;
-  position: absolute;
-  margin-top: 33%;
+  /* top: 0; */
+  /* position: absolute; */
+  /* margin-top: 33%; */
   pointer-events: none;
   z-index: 1;
 
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+
   @media (orientation: portrait) {
-    margin-top: 65%;
+    /* margin-top: 65%; */
   }
 `
 

@@ -4,8 +4,8 @@ export const Footer = () => {
   return (
     <Container>
       Photo Credit:
-      <a href="https://unsplash.com/photos/a-person-standing-in-a-room-eUSkjC5gOVk">
-        Jonathan Borba, 2022
+      <a href="https://www.map.org.uk/landing-pages/maps-emergency-response">
+        MAP
       </a>
     </Container>
   )
