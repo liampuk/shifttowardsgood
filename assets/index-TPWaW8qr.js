@@ -61,7 +61,7 @@ Error generating stack: `+o.message+`
     color: white;
     margin-left: 4px;
   }
-`,jx=()=>(ls.useEffect(()=>{const a=window.innerHeight*.01;document.documentElement.style.setProperty("--initial-vh",`${a}px`)},[]),ot.jsxs(Xx,{id:"top",children:[ot.jsx(qx,{src:"bg-image.png"}),ot.jsxs(Qx,{children:[ot.jsx(Wx,{children:"One Shift Can Make a Difference"}),ot.jsx("div",{children:ot.jsx("p",{children:"Donating one extra shift can make a huge difference to help people critically in need in Palestine."})}),ot.jsx(Zx,{onClick:()=>window.location.href="https://www.gofundme.com/f/shift-towards-good-for-medical-aid-for-palestinians",children:"Click here to DONATE"})]})]})),qx=Lt.img`
+`,jx=()=>(ls.useEffect(()=>{const a=window.innerHeight*.01;document.documentElement.style.setProperty("--initial-vh",`${a}px`)},[]),ot.jsxs(Xx,{id:"top",children:[ot.jsx(qx,{src:"bg-image.png"}),ot.jsxs(Qx,{children:[ot.jsx(Wx,{children:"One Shift Can Make a Difference"}),ot.jsx("div",{children:ot.jsx("p",{children:"Donating one extra shift can make a huge difference."})}),ot.jsx(Zx,{onClick:()=>window.location.href="https://www.gofundme.com/f/shift-towards-good-for-medical-aid-for-palestinians",children:"Click here to DONATE"})]})]})),qx=Lt.img`
   width: 100%;
   object-fit: cover;
   object-position: 1 0;
