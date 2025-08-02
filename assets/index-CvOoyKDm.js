@@ -167,6 +167,7 @@ Error generating stack: `+o.message+`
   @media (orientation: portrait) {
     flex-direction: column;
     height: auto;
+    padding: 32px;
   }
 `,nA=Lt.div`
   font-size: 60px;
@@ -180,6 +181,7 @@ Error generating stack: `+o.message+`
 
   @media (orientation: portrait) {
     width: 100%;
+    text-align: left;
   }
 `,rA=Lt.div`
   margin-top: -225px;
@@ -202,6 +204,10 @@ Error generating stack: `+o.message+`
   direction: column;
   align-items: center;
   flex-direction: column;
+
+  @media (orientation: portrait) {
+    padding: 32px;
+  }
 `,oA=Lt.h2`
   font-size: 60px;
   font-weight: 600;
@@ -215,6 +221,7 @@ Error generating stack: `+o.message+`
   @media (orientation: portrait) {
     width: 100%;
     font-size: 24px;
+    text-align: left;
   }
 `,uA=Lt.button`
   border: none;
@@ -285,7 +292,7 @@ Error generating stack: `+o.message+`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 2;
 
   @media (orientation: portrait) {
     height: 90px;
@@ -460,6 +467,7 @@ Schedule: ${d.map(S=>Ms(S))} pos: ${this.timelinePos}`),g.length&&this.log(`Remo
 
   @media (orientation: portrait) {
     flex-direction: column;
+    padding: 32px;
   }
 `,g_=Lt.div`
   font-size: 60px;
@@ -474,6 +482,7 @@ Schedule: ${d.map(S=>Ms(S))} pos: ${this.timelinePos}`),g.length&&this.log(`Remo
 
   @media (orientation: portrait) {
     width: 100%;
+    text-align: left;
   }
 `,m_=Kx`
   html {
