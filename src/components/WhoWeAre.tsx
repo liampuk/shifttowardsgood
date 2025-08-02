@@ -152,9 +152,15 @@ const MapLogo = styled.img`
 `
 
 const PauseButton = styled.svg`
+  top: 0;
   position: absolute;
-  margin-top: 45%;
+  margin-top: 33%;
   pointer-events: none;
+  z-index: 1;
+
+  @media (orientation: portrait) {
+    margin-top: 65%;
+  }
 `
 
 const VideoContainer = styled.div`
@@ -163,6 +169,7 @@ const VideoContainer = styled.div`
   justify-content: center;
   width: 100%;
   margin-top: 32px;
+  position: relative;
 `
 
 const MainVideo = styled.video`
