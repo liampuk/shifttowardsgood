@@ -65,7 +65,7 @@ Error generating stack: `+o.message+`
   width: 100%;
   object-fit: cover;
   object-position: 0 0;
-  height: 100vh;
+  height: 100svh;
 
   @media (orientation: portrait) {
     height: 700px;
@@ -84,7 +84,7 @@ Error generating stack: `+o.message+`
   }
   }
 `,Xx=Rt.div`
-  height: 100vh;
+  height: 100svh;
 `,Qx=Rt.div`
   width: 500px;
   background-color: white;
@@ -92,7 +92,7 @@ Error generating stack: `+o.message+`
   /* backdrop-filter: blur(10px); */
   position: absolute;
   right: 100px;
-  top: 58vh;
+  top: 58svh;
   padding: 32px;
   font-size: 20px;
   text-align: justify;
@@ -142,7 +142,7 @@ Error generating stack: `+o.message+`
   height: 100%;
 `,iA=Rt.img`
   width: 100%;
-  margin-top: 30vh;
+  margin-top: 30svh;
   border-radius: 8px;
 
   @media (orientation: portrait) {
@@ -155,7 +155,7 @@ Error generating stack: `+o.message+`
   padding: 64px;
   position: relative;
   display: flex;
-  height: 110vh;
+  height: 110svh;
   gap: 64px;
 
   @media (orientation: portrait) {
@@ -164,7 +164,7 @@ Error generating stack: `+o.message+`
   }
 `,nA=Rt.div`
   font-size: 60px;
-  margin-top: 35vh;
+  margin-top: 35svh;
   font-weight: 600;
   margin-bottom: 32px;
 
@@ -184,7 +184,7 @@ Error generating stack: `+o.message+`
   background-color: #222;
   color: white;
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
   padding: 64px;
   position: relative;
   display: flex;
@@ -193,12 +193,12 @@ Error generating stack: `+o.message+`
   flex-direction: column;
 `,lA=Rt.h2`
   font-size: 60px;
-  margin-top: 25vh;
+  margin-top: 25svh;
   font-weight: 600;
   margin-bottom: 32px;
 
   @media (orientation: portrait) {
-    margin-top: 20vh;
+    margin-top: 20svh;
   }
 `,np=Rt.div`
   font-size: 33px;
@@ -233,7 +233,7 @@ Error generating stack: `+o.message+`
 `,cA=Rt.div`
   width: 100vw;
   right: 0;
-  height: 100vh;
+  height: 100svh;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   position: fixed;
@@ -423,7 +423,7 @@ Schedule: ${d.map(S=>Os(S))} pos: ${this.timelinePos}`),g.length&&this.log(`Remo
   margin-top: 10%;
   pointer-events: none;
 `,c_=Rt.div`
-  height: 100vh;
+  height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -457,7 +457,7 @@ Schedule: ${d.map(S=>Os(S))} pos: ${this.timelinePos}`),g.length&&this.log(`Remo
   }
 `,d_=Rt.div`
   font-size: 60px;
-  margin-top: 30vh;
+  margin-top: 30svh;
   font-weight: 600;
   margin-bottom: 32px;
 
