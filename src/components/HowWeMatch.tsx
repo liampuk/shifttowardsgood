@@ -55,6 +55,7 @@ const Container = styled.div`
   @media (orientation: portrait) {
     flex-direction: column;
     height: auto;
+    padding: 32px;
   }
 `
 
@@ -72,6 +73,7 @@ const SectionText = styled.div`
 
   @media (orientation: portrait) {
     width: 100%;
+    text-align: left;
   }
 `
 

@@ -38,6 +38,10 @@ const Container = styled.div`
   direction: column;
   align-items: center;
   flex-direction: column;
+
+  @media (orientation: portrait) {
+    padding: 32px;
+  }
 `
 
 const Heading = styled.h2`
@@ -55,6 +59,7 @@ const SectionText = styled.div`
   @media (orientation: portrait) {
     width: 100%;
     font-size: 24px;
+    text-align: left;
   }
 `
 
