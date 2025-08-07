@@ -55,21 +55,35 @@ export const WhoWeAre = () => {
         <SectionText>
           Shift towards Good is a movement raising money for Medical Aid for
           Palestinians. If you can, take on an extra shift and donate what you
-          earn. Each donation will be matched, up to a total of £5000.
+          earn. Each donation made through our GoFundMe page will be matched, up
+          to a total of £6000.
         </SectionText>
         <SectionText>
           We stand in solidarity with our colleagues in Gaza and believe that
           each shift can make a huge difference.
         </SectionText>
-        <MapSection>
-          <MapLogo src="maplogo.webp" />
-          <MapButton
-            onClick={() => (window.location.href = "https://www.map.org.uk/")}
-          >
-            Click here to read more
-            <br /> about the work MAP does
-          </MapButton>
-        </MapSection>
+        <LinksSection>
+          <MapSection>
+            <MapLogo src="maplogo.webp" />
+            <MapButton
+              onClick={() => (window.location.href = "https://www.map.org.uk/")}
+            >
+              Click here to read more
+              <br /> about the work MAP does
+            </MapButton>
+          </MapSection>
+          <MapSection>
+            <InstagramImage src="instagram-group.webp" />
+            <MapButton
+              onClick={() =>
+                (window.location.href =
+                  "https://www.instagram.com/shifttowardsgood/?hl=en")
+              }
+            >
+              Follow us on Instagram
+            </MapButton>
+          </MapSection>
+        </LinksSection>
       </div>
       <VideoContainer>
         <MainVideo
@@ -94,18 +108,42 @@ export const WhoWeAre = () => {
           </PauseButton>
         )}
       </VideoContainer>
-      <MapSectionMobile>
-        <MapLogo src="maplogo.webp" />
-        <MapButton
-          onClick={() => (window.location.href = "https://www.map.org.uk/")}
-        >
-          Click here to read more
-          <br /> about the work MAP does
-        </MapButton>
-      </MapSectionMobile>
+      <LinksContainerMobile>
+        <MapSectionMobile>
+          <MapLogo src="maplogo.webp" />
+          <MapButton
+            onClick={() => (window.location.href = "https://www.map.org.uk/")}
+          >
+            Click here to read more
+            <br /> about the work MAP does
+          </MapButton>
+        </MapSectionMobile>
+        <MapSectionMobile>
+          <InstagramImage src="instagram-group.webp" />
+          <MapButton
+            onClick={() =>
+              (window.location.href =
+                "https://www.instagram.com/shifttowardsgood/?hl=en")
+            }
+          >
+            Follow us on Instagram
+          </MapButton>
+        </MapSectionMobile>
+      </LinksContainerMobile>
     </Container>
   )
 }
+
+const LinksContainerMobile = styled.div`
+  display: none;
+
+  @media (orientation: portrait) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+`
 
 const MapButton = styled.button`
   background-color: #e62a2a;
@@ -121,11 +159,22 @@ const MapButton = styled.button`
   }
 `
 
+const LinksSection = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+`
+
 const MapSection = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 64px;
+  width: fit-content;
+
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
 
   @media (orientation: portrait) {
     display: none;
@@ -146,8 +195,12 @@ const MapSectionMobile = styled(MapSection)`
 const MapLogo = styled.img`
   height: 120px;
   background-color: white;
-  padding: 24px;
+  padding: 16px;
   border-radius: 8px;
+`
+
+const InstagramImage = styled(MapLogo)`
+  height: 160px;
 `
 
 const PauseButton = styled.svg`

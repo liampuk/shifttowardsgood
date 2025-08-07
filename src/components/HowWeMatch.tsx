@@ -11,7 +11,7 @@ export const HowWeMatch = () => {
           reference for the date you donated on.
         </SectionText>
         <SectionText>
-          We are currently able to match £5000 of donations. If you or your
+          We are currently able to match £6000 of donations. If you or your
           business can help us increase this, please get in touch at{" "}
           <Link href="mailto:contact@shifttowardsgood.org.uk">
             contact@shifttowardsgood.org.uk
